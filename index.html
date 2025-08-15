@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Yayaa VJ Contact</title>
+<style>
+  :root{
+    --bg:#1a001a; /* gelap kehitaman pink */
+    --card:rgba(255,20,147,0.1); /* card transparan pink */
+    --muted:#ff99cc;
+    --text:#ffc0cb;
+    --accent:#ff1493; /* warna pink terang */
+    --radius:18px;
+    --shadow:0 12px 28px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0;background-color: var(--bg);overscroll-behavior: none;-webkit-overflow-scrolling: touch;}
+  body{font-family:ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial; color:var(--text);position: relative;overflow-y: auto;opacity: 0;animation: fadeInBody 0.8s ease-out forwards;}
+  @keyframes fadeInBody { from { opacity: 0; } to { opacity: 1; } }
+  #particles {position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; background: var(--bg);}
+  .wrap{max-width:720px;margin:0 auto;padding:28px 18px 80px;position: relative; z-index: 1;}
+  .top{text-align:center;padding:22px 0 10px;position:relative;opacity:0;transform:translateY(20px);animation: fadeUp 0.7s ease-out forwards;animation-delay:0.2s;}
+  .avatar{width:92px;height:92px;margin:0 auto 18px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:800;font-size:44px;box-shadow:0 10px 24px rgba(255,20,147,.35), inset 0 0 0 6px rgba(0,0,0,.18);transform: scale(0.5);opacity:0;animation: popIn 0.6s ease-out forwards;animation-delay:0.4s;}
+  h1{margin:0 0 8px;font-size:34px;line-height:1.15;font-weight:800;letter-spacing:.2px;}
+  h1 .accent{color:var(--accent)}
+  .sub{margin:0 auto 20px;max-width:520px;color:var(--muted);font-size:16px}
+  .card{background: var(--card);border-radius: var(--radius);padding:20px 18px;margin:14px 0;box-shadow: var(--shadow);border:1px solid rgba(255,20,147,.15);opacity: 0;transform: translateY(20px);transition: opacity .6s ease, transform .6s ease;backdrop-filter: blur(6px);}
+  .card.visible {opacity: 1; transform: translateY(0);}
+  .row{display:flex;gap:16px;align-items:flex-start}
+  .ic{flex:0 0 50px;height:50px;border-radius:14px;display:grid;place-items:center;background:rgba(255,20,147,.08);border:1px solid rgba(255,20,147,.25);}
+  .ic svg{width:26px;height:26px;fill:var(--accent)}
+  .meta{flex:1}
+  .title{font-size:24px;font-weight:800;margin:2px 0 6px}
+  .desc{color:var(--muted);margin:0 0 12px}
+  .cta{display:inline-flex;gap:10px;align-items:center;color:var(--accent);text-decoration:none;font-weight:800;border-bottom:2px solid rgba(255,20,147,.35);padding-bottom:2px;}
+  .cta .arrow{font-weight:900}
+  .sp{height:14px}
+  @media (hover:hover){.card:hover{transform:translateY(-2px);transition:transform .2s ease}}
+  @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+  @keyframes popIn { to { opacity: 1; transform: scale(1); } }
+</style>
+</head>
+<body>
+<canvas id="particles"></canvas>
+<div class="wrap">
+  <header class="top">
+    <div class="avatar">C</div>
+    <h1>Yayaa <span class="accent">VJ</span></h1>
+    <p class="sub">Semua sosial media $ kontak resmi cuman di bawah, Tidak menerima chat yang gajelas!!</p>
+  </header>
+
+  <!-- Cards -->
+  <section class="card">
+    <div class="row">
+      <div class="ic"><svg viewBox="0 0 24 24"><path d="M20.52 3.48A11.91 11.91 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.12.56 4.19 1.63 6.01L0 24l6.18-1.6A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 21.5c-1.84 0-3.62-.49-5.17-1.42l-.37-.22-3.66 1 1-3.56-.24-.38A9.44 9.44 0 0 1 2.5 12c0-5.24 4.26-9.5 9.5-9.5s9.5 4.26 9.5 9.5-4.26 9.5-9.5 9.5zm5.24-7.44c-.29-.15-1.7-.84-1.96-.94-.26-.1-.45-.15-.64.15s-.75.94-.91 1.13c-.17.19-.33.21-.62.06-.29-.15-1.21-.45-2.3-1.44-.85-.75-1.42-1.66-1.58-1.95-.17-.29-.02-.45.13-.6.13-.13.29-.33.43-.49.14-.17.19-.28.29-.47.1-.19.05-.36-.02-.51-.07-.15-.64-1.54-.88-2.12-.23-.54-.46-.47-.62-.48-.16-.01-.35-.02-.54-.02s-.5.07-.76.36c-.26.29-.99 1.02-.99 2.49 0 1.47 1.01 2.89 1.15 3.09.14.19 2.01 3.07 4.88 4.3.68.29 1.21.46 1.63.59.68.22 1.3.2 1.79.12.55-.08 1.7-.69 1.94-1.35.24-.66.24-1.22.16-1.35-.08-.13-.27-.21-.56-.36z"/></svg></div>
+      <div class="meta">
+        <div class="title">WhatsApp</div>
+        <p class="desc">Respon cepat via whatsApp</p>
+        <a class="cta" href="https://wa.me/6285867479365" target="_blank">Open chat <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+<section class="card">
+  <div class="row">
+        <div class="ic">
+            <!-- Instagram -->
+            <svg viewBox="0 0 24 24">
+                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5z"/>
+                <circle cx="12" cy="12" r="3.5"/>
+                <circle cx="17.5" cy="6.5" r="1.5"/>
+            </svg>
+        </div>
+    <div class="meta">
+      <div class="title">Instagram</div>
+      <p class="desc">Jangan lupa folow instagram</p>
+      <a class="cta" href="https://www.instagram.com/aciciiw_?igsh=MXRjcGg0N2kxbnJtdw==" target="_blank">Open Instagram <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+  <section class="card">
+    <div class="row">
+      <div class="ic"><svg viewBox="0 0 24 24"><path d="M9.99 15.18l-.36 4.78c.52 0 .74-.22 1.01-.48l2.43-2.31 5.02 3.66c.92.5 1.58.24 1.82-.86l3.29-15.39c.3-1.35-.48-1.88-1.37-1.55L2.76 9.89c-1.32.52-1.3 1.27-.22 1.6l4.97 1.56 11.5-7.25-9.02 9.38z"/></svg></div>
+      <div class="meta">
+        <div class="title">Telegram</div>
+        <p class="desc">Respon cepat via telegram</p>
+        <a class="cta" href="https://t.me/JsCiu" target="_blank">Open Telegram <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="row">
+      <div class="ic"><svg viewBox="0 0 24 24"><path d="M12.75 2h2.4a5 5 0 0 0 5 5v2.2a7.4 7.4 0 0 1-5-1.78v7.64a5.1 5.1 0 1 1-5.1-5.1h.6v2.46a2.64 2.64 0 1 0 2.64 2.64V2z"/></svg></div>
+      <div class="meta">
+        <div class="title">TikTok</div>
+        <p class="desc">Jangan lupa folow tik tok</p>
+        <a class="cta" href="https://www.tiktok.com/@cchococrmel?_t=ZS-8wTyx3F8gDg&_r=1" target="_blank">Open TikTok <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="sp"></div>
+</div>
+
+<script>
+// Particles
+const canvas = document.getElementById('particles');
+const ctx = canvas.getContext('2d');
+let particles = [];
+const particleCount = 60;
+function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas();
+for (let i = 0; i < particleCount; i++) {
+  particles.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    r: Math.random() * 3 + 1,
+    dx: (Math.random() - 0.5) * 0.7,
+    dy: (Math.random() - 0.5) * 0.7
+  });
+}
+function drawParticles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = 'rgba(255,20,147,0.8)';
+  for (let p of particles) {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fill();
+    p.x += p.dx;
+    p.y += p.dy;
+    if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+    if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+  }
+  requestAnimationFrame(drawParticles);
+}
+drawParticles();
+
+// Scroll reveal for cards
+const cards = document.querySelectorAll('.card');
+function revealOnScroll() {
+  const trigger = window.innerHeight * 0.85;
+  cards.forEach(card => {
+    const rect = card.getBoundingClientRect();
+    if (rect.top < trigger) { card.classList.add('visible'); }
+  });
+}
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll();
+</script>
+</body>
+</html>
